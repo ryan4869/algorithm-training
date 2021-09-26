@@ -17,6 +17,7 @@ public class BinaryTree {
         }
     }
 
+    //前序遍历 递归
     public static void preOrder(Node head){
         if (head == null){
             return;
@@ -26,30 +27,30 @@ public class BinaryTree {
         preOrder(head.right);
     }
 
+    //前序遍历 非递归
     public static void preOrderUnRecur(Node head){
-
+        Node cur = head;
         Stack<Node> stack = new Stack<>();
-        stack.push(head);
-        System.out.println(head.value);
-        head = head.left;
+        stack.push(cur);
+        System.out.println(cur.value);
+        cur = cur.left;
         while (!stack.isEmpty()){
-            while (head!=null){
-                stack.push(head);
-                System.out.println(head.value);
-                head = head.left;
+            while (cur!=null){
+                stack.push(cur);
+                System.out.println(cur.value);
+                cur = cur.left;
             }
             Node pop = stack.pop();
             if (pop.right != null){
-                stack.push(pop.right);
+                cur = pop.right;
+                stack.push(cur);
+                System.out.println(cur.value);
+                cur = cur.left;
             }
-
         }
-
-
     }
 
-
-
+    //中序遍历 递归
     public static void inOrder(Node head){
         if (head == null){
             return;
@@ -57,6 +58,36 @@ public class BinaryTree {
         inOrder(head.left);
         System.out.println(head.value);
         inOrder(head.right);
+    }
+
+    //中序遍历 非递归
+    public static void inOrderUnRecur(Node head){
+        Node cur = head;
+        Stack<Node> stack = new Stack<>();
+        stack.push(cur);
+        cur = cur.left;
+        while (!stack.isEmpty()){
+            while (cur!=null){
+                stack.push(cur);
+                cur = cur.left;
+            }
+            Node pop = stack.pop();
+            System.out.println(pop.value);
+            if (pop.right != null){
+                cur = pop.right;
+                stack.push(cur);
+                cur = cur.left;
+            }
+        }
+    }
+
+    public static void postOrder(Node head){
+        if (head == null){
+            return;
+        }
+        postOrder(head.left);
+        postOrder(head.right);
+        System.out.println(head.value);
     }
 
     public static void main(String[] args) {
@@ -73,7 +104,8 @@ public class BinaryTree {
         head.right.right.right = new Node(11);
 
 
-        inOrder(head);
+//        inOrder(head);
+        postOrder(head);
 
     }
 
