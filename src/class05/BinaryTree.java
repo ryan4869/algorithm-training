@@ -1,7 +1,6 @@
 package class05;
 
-import java.util.Collection;
-import java.util.Stack;
+import java.util.*;
 
 public class BinaryTree {
 
@@ -105,8 +104,75 @@ public class BinaryTree {
 
 
 //        inOrder(head);
-        postOrder(head);
+//        postOrder(head);
+//        w(head);
+        System.out.println(getMaxWidth(head));
 
+    }
+
+//    二叉树的宽度优先遍历
+    public static void w(Node head){
+
+        if (head == null){
+            return;
+        }
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(head);
+        while (!queue.isEmpty()){
+            Node poll = queue.poll();
+            System.out.println(poll.value);
+            if (poll.left != null){
+                queue.add(poll.left);
+            }
+            if (poll.right != null){
+                queue.add(poll.right);
+            }
+
+
+        }
+
+    }
+
+    //求一棵二叉树的最大宽度
+    public static int getMaxWidth(Node head){
+
+        if (head == null){
+            return 0;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        HashMap<Node,Integer> levelMap = new HashMap<>();
+        levelMap.put(head,1);
+        int curLevel = 1;//当前在哪一层
+        int curLevelNodes = 0;//当前层发现了几个结点
+        int max = Integer.MIN_VALUE;
+        while (!queue.isEmpty()){
+            Node poll = queue.poll();
+            Integer curNodeLevel = levelMap.get(poll);
+            if (curLevel == curNodeLevel){
+                curLevelNodes++;
+            }else {
+                max = Math.max(max,curLevelNodes);
+                curLevel++;
+                curLevelNodes = 1;
+            }
+
+//            System.out.println(poll.value);
+
+            if (poll.left != null){
+
+                queue.add(poll.left);
+                levelMap.put(poll.left,curNodeLevel+1);
+
+            }
+            if (poll.right != null){
+                queue.add(poll.right);
+                levelMap.put(poll.right,curNodeLevel+1);
+            }
+
+
+        }
+        return max;
     }
 
 
