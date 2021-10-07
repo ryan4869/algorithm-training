@@ -106,7 +106,7 @@ public class BinaryTree {
 //        inOrder(head);
 //        postOrder(head);
 //        w(head);
-        System.out.println(getMaxWidth(head));
+        System.out.println(getMaxWidth2(head));
 
     }
 
@@ -173,6 +173,44 @@ public class BinaryTree {
 
         }
         return max;
+    }
+
+
+
+    //求一棵二叉树的最大宽度（不用hashmap）
+    public static int getMaxWidth2(Node head){
+
+        if (head == null){
+            return 0;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        Node curLevelEnd = head;
+        Node nextLevelEnd = null;
+        int curLevelNodes = 0;
+        int max = Integer.MIN_VALUE;
+        while (!queue.isEmpty()){
+            Node cur = queue.poll();
+            curLevelNodes++;
+            if (cur.left!=null){
+                queue.add(cur.left);
+                nextLevelEnd = cur.left;
+            }
+            if (cur.right!=null){
+                queue.add(cur.right);
+                nextLevelEnd = cur.right;
+
+            }
+            if (cur == curLevelEnd){
+                max = curLevelNodes;
+                curLevelEnd = nextLevelEnd;
+                nextLevelEnd = null;
+                curLevelNodes = 0;
+
+            }
+        }
+        return max;
+
     }
 
 
