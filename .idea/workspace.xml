@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="无环链表相交">
-      <change afterPath="$PROJECT_DIR$/src/class06/leetcode/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/class06/leetcode/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/easy/squares_of_a_sorted_array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/medium/rotate_array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/class06/BinaryTree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class06/BinaryTree2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/medium/reverse_linked_list_ii.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/medium/reverse_linked_list_ii.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryTree2">
+  <component name="RunManager" selected="Application.rotate_array">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -203,34 +203,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code06_QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class03.Code06_QuickSort" />
-      <module name="Nowcoder" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code07_IntegerReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.Code07_IntegerReverse" />
-      <module name="leetcode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -244,6 +216,34 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rotate_array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.rotate_array" />
+      <module name="leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="squares_of_a_sorted_array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.squares_of_a_sorted_array" />
+      <module name="leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,19 +379,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Code07_IntegerReverse" />
-      <item itemvalue="Application.Code06_QuickSort" />
       <item itemvalue="Application.reverse_linked_list_ii" />
       <item itemvalue="Application.BinaryTree" />
       <item itemvalue="Application.BinaryTree2" />
+      <item itemvalue="Application.squares_of_a_sorted_array" />
+      <item itemvalue="Application.rotate_array" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.rotate_array" />
+        <item itemvalue="Application.squares_of_a_sorted_array" />
         <item itemvalue="Application.BinaryTree2" />
         <item itemvalue="Application.BinaryTree" />
         <item itemvalue="Application.reverse_linked_list_ii" />
-        <item itemvalue="Application.Code06_QuickSort" />
-        <item itemvalue="Application.Code07_IntegerReverse" />
       </list>
     </recent_temporary>
   </component>
@@ -438,6 +438,7 @@
       <workItem from="1637131466134" duration="604000" />
       <workItem from="1637135624883" duration="1069000" />
       <workItem from="1637215337722" duration="1895000" />
+      <workItem from="1637541904842" duration="10782000" />
     </task>
     <task id="LOCAL-00001" summary="无环链表相交">
       <created>1631698099956</created>
@@ -474,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633687199589</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="无环链表相交">
+      <created>1637542057209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637542057209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,10 +510,34 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="无环链表相交" />
     <MESSAGE value="二叉树" />
     <MESSAGE value="平衡二叉树" />
-    <option name="LAST_COMMIT_MESSAGE" value="平衡二叉树" />
+    <MESSAGE value="无环链表相交" />
+    <option name="LAST_COMMIT_MESSAGE" value="无环链表相交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/easy/squares_of_a_sorted_array.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/easy/squares_of_a_sorted_array.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/leetcode/src/medium/rotate_array.java</url>
+          <line>4</line>
+          <properties class="medium.rotate_array" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
