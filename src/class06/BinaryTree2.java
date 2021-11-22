@@ -3,6 +3,9 @@ package class06;
 
 import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 
+import java.math.BigDecimal;
+import java.util.HashMap;
+
 /**
  * Created by ryangjun on 2021/10/7.
  */
@@ -48,20 +51,21 @@ public class BinaryTree2 {
         }
         ReturnTypeBST returnTypeLeft = isBST(head.left);
         ReturnTypeBST returnTypeRight = isBST(head.right);
-        int leftMax = Integer.MIN_VALUE;
-        int rightMin = Integer.MAX_VALUE;
+        int min = head.value;
+        int max = head.value;
         if (returnTypeLeft!=null){
-            leftMax = returnTypeLeft.max;
+            min = Integer.min(head.value,returnTypeLeft.min);
+            max = Integer.max(head.value,returnTypeLeft.max);
         }
-        if (returnTypeLeft!=null){
-            rightMin = returnTypeRight.min;
+        if (returnTypeRight!=null){
+            min = Integer.min(head.value,returnTypeRight.min);
+            max = Integer.max(head.value,returnTypeRight.max);
+        }
+        if (returnTypeLeft!=null && returnTypeRight!=null
+                && returnTypeLeft.max<head.value && returnTypeRight.min>head.value){
+            return new ReturnTypeBST(true,min,max);
         }
 
-        if ((returnTypeLeft == null || (returnTypeLeft!=null&& returnTypeLeft.isFlag))
-                && (returnTypeRight == null || (returnTypeRight!=null&& returnTypeRight.isFlag))
-                && returnTypeLeft.max<head.value && returnTypeRight.min>head.value){
-            return new ReturnTypeBST(true,head.value,head.value);
-        }
         return new ReturnTypeBST(false,head.value,head.value);
     }
 
@@ -98,6 +102,8 @@ public class BinaryTree2 {
 
     }
 
+
+
     public static void main(String[] args) {
         Node head = new Node(5);
         head.left = new Node(3);
@@ -115,7 +121,9 @@ public class BinaryTree2 {
 //        inOrder(head);
 //        postOrder(head);
 //        w(head);
-        System.out.println(isBST(head).isFlag);
+        //System.out.println(isBST(head).isFlag);
+
+
 
     }
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/class05/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="无环链表相交">
+      <change afterPath="$PROJECT_DIR$/src/class06/leetcode/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class06/leetcode/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class06/BinaryTree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class06/BinaryTree2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +44,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryTree">
+  <component name="RunManager" selected="Application.BinaryTree2">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -189,13 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code04_SortArrayDistanceLessK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class03.Code04_SortArrayDistanceLessK" />
+    <configuration name="BinaryTree2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class06.BinaryTree2" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class03.*" />
+          <option name="PATTERN" value="class06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,19 +379,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
       <item itemvalue="Application.Code07_IntegerReverse" />
       <item itemvalue="Application.Code06_QuickSort" />
       <item itemvalue="Application.reverse_linked_list_ii" />
       <item itemvalue="Application.BinaryTree" />
+      <item itemvalue="Application.BinaryTree2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTree2" />
         <item itemvalue="Application.BinaryTree" />
         <item itemvalue="Application.reverse_linked_list_ii" />
         <item itemvalue="Application.Code06_QuickSort" />
         <item itemvalue="Application.Code07_IntegerReverse" />
-        <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +418,26 @@
       <workItem from="1632299405472" duration="1171000" />
       <workItem from="1632358179416" duration="4154000" />
       <workItem from="1632448072735" duration="8000" />
-      <workItem from="1632462364436" duration="2205000" />
+      <workItem from="1632462364436" duration="2239000" />
+      <workItem from="1632620248766" duration="7925000" />
+      <workItem from="1632811880602" duration="1168000" />
+      <workItem from="1633653882148" duration="1197000" />
+      <workItem from="1633655172145" duration="4866000" />
+      <workItem from="1633675090658" duration="395000" />
+      <workItem from="1633676043845" duration="286000" />
+      <workItem from="1633676423859" duration="17779000" />
+      <workItem from="1633913237962" duration="714000" />
+      <workItem from="1634021040877" duration="1438000" />
+      <workItem from="1634091388890" duration="1187000" />
+      <workItem from="1634173087910" duration="147000" />
+      <workItem from="1634192910971" duration="10133000" />
+      <workItem from="1634546107810" duration="861000" />
+      <workItem from="1634604584337" duration="1199000" />
+      <workItem from="1636537655340" duration="1193000" />
+      <workItem from="1637025825365" duration="6365000" />
+      <workItem from="1637131466134" duration="604000" />
+      <workItem from="1637135624883" duration="1069000" />
+      <workItem from="1637215337722" duration="1895000" />
     </task>
     <task id="LOCAL-00001" summary="无环链表相交">
       <created>1631698099956</created>
@@ -434,7 +453,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631961552920</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="无环链表相交">
+      <created>1632478308956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632478308956</updated>
+    </task>
+    <task id="LOCAL-00004" summary="二叉树">
+      <created>1632650981244</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632650981244</updated>
+    </task>
+    <task id="LOCAL-00005" summary="平衡二叉树">
+      <created>1633687199589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633687199589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +503,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="无环链表相交" />
-    <option name="LAST_COMMIT_MESSAGE" value="无环链表相交" />
+    <MESSAGE value="二叉树" />
+    <MESSAGE value="平衡二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="平衡二叉树" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
