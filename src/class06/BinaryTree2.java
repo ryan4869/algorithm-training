@@ -2,9 +2,9 @@ package class06;
 
 
 import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
+import sun.awt.image.ImageWatched;
 
-import java.math.BigDecimal;
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Created by ryangjun on 2021/10/7.
@@ -43,6 +43,67 @@ public class BinaryTree2 {
         }
     }
 
+    //如何判断一颗二叉树是否是搜索二叉树？ 递归 動態檢查
+    public static int preValue = Integer.MIN_VALUE;
+    public static boolean checkBST(Node head){
+        if (null == head){
+            return true;
+        }
+        boolean isLeftBST = checkBST(head.left);
+        if (!isLeftBST){
+            return false;
+        }
+        if (head.value <= preValue){
+            return false;
+        }else {
+            preValue = head.value;
+        }
+        return checkBST(head.right);
+    }
+
+    public static boolean checkBST2(Node head){
+        List<Node> inOrderList = new ArrayList<>();
+        process2(head,inOrderList);
+        for (int i = 0; i < inOrderList.size()-1; i++) {
+            if (inOrderList.get(i).value >= inOrderList.get(i+1).value){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void process2(Node head, List<Node> inOrderList){
+        if (null == head){
+            return;
+        }
+        process2(head.left,inOrderList);
+        inOrderList.add(head);
+        process2(head.right,inOrderList);
+    }
+
+    // 非遞歸中序遍歷
+    public static boolean checkBST3(Node head){
+        Stack<Node> stack = new Stack<>();
+        int preValue = Integer.MIN_VALUE;
+        while (!stack.isEmpty() || head!=null){
+            if (head!=null){
+                stack.push(head);
+                head = head.left;
+            }
+            else {
+                Node pop = stack.pop();
+//                System.out.println(pop.value);
+                if (pop.value <= preValue){
+                    return false;
+                }else {
+                    preValue = pop.value;
+                }
+                head = pop.right;
+            }
+        }
+        return true;
+    }
+
     //如何判断一颗二叉树是否是搜索二叉树？ 递归
     public static ReturnTypeBST isBST(Node head) {
 
@@ -51,21 +112,20 @@ public class BinaryTree2 {
         }
         ReturnTypeBST returnTypeLeft = isBST(head.left);
         ReturnTypeBST returnTypeRight = isBST(head.right);
-        int min = head.value;
-        int max = head.value;
+        int leftMax = Integer.MIN_VALUE;
+        int rightMin = Integer.MAX_VALUE;
         if (returnTypeLeft!=null){
-            min = Integer.min(head.value,returnTypeLeft.min);
-            max = Integer.max(head.value,returnTypeLeft.max);
+            leftMax = returnTypeLeft.max;
         }
-        if (returnTypeRight!=null){
-            min = Integer.min(head.value,returnTypeRight.min);
-            max = Integer.max(head.value,returnTypeRight.max);
-        }
-        if (returnTypeLeft!=null && returnTypeRight!=null
-                && returnTypeLeft.max<head.value && returnTypeRight.min>head.value){
-            return new ReturnTypeBST(true,min,max);
+        if (returnTypeLeft!=null){
+            rightMin = returnTypeRight.min;
         }
 
+        if ((returnTypeLeft == null || (returnTypeLeft!=null&& returnTypeLeft.isFlag))
+                && (returnTypeRight == null || (returnTypeRight!=null&& returnTypeRight.isFlag))
+                && returnTypeLeft.max<head.value && returnTypeRight.min>head.value){
+            return new ReturnTypeBST(true,head.value,head.value);
+        }
         return new ReturnTypeBST(false,head.value,head.value);
     }
 
@@ -102,7 +162,37 @@ public class BinaryTree2 {
 
     }
 
+    //1任一節點，有右無左false
+    //2在1不違規條件下，如果遇到了第一個左右子不全，後續皆葉
+    public static boolean isCBT(Node head){
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        boolean leaf = false;
+        Node l = null;
+        Node r = null;
+        while (!queue.isEmpty()){
+            Node poll = queue.poll();
+            l = poll.left;
+            r = poll.right;
 
+            if (leaf && (l !=null || r !=null)){
+                return false;
+            }
+            if (l == null && r !=null){
+                return false;
+            }
+            if (l!=null){
+                queue.add(l);
+            }
+            if (r!=null){
+                queue.add(r);
+            }
+            if (l == null || r == null){
+                leaf = true;
+            }
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
         Node head = new Node(5);
@@ -121,9 +211,9 @@ public class BinaryTree2 {
 //        inOrder(head);
 //        postOrder(head);
 //        w(head);
-        //System.out.println(isBST(head).isFlag);
-
-
-
+        System.out.println(checkBST(head));
+        System.out.println(checkBST2(head));
+        System.out.println(checkBST3(head));
+        System.out.println(isCBT(head));
     }
 }
