@@ -80,6 +80,7 @@ class P19_RemoveNthNodeFromEndOfList{
  * }
  */
 class Solution {
+	// 双指针
     public ListNode removeNthFromEnd(ListNode head, int n) {
     	ListNode p = head;
     	ListNode q = head;

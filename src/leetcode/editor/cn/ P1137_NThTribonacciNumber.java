@@ -46,9 +46,21 @@ class P1137_NThTribonacciNumber{
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int tribonacci(int n) {
-
-    	return 0;
+    	return process(n);
     }
+	// 动态规划
+	// 直接递归 35 超时 考虑优化
+	public int process(int n){
+		if (n == 0){
+			return 0;
+		}
+		if (n == 1 || n == 2){
+			return 1;
+		}
+
+		return process(n-1)+process(n-2)+process(n-3);
+	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
