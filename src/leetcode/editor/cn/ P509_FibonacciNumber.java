@@ -52,7 +52,7 @@ class P509_FibonacciNumber{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P509_FibonacciNumber().new Solution();
-	 	 solution.fib(3);
+	 	 solution.fib(4);
 
 	 }
 //力扣代码
@@ -77,6 +77,21 @@ class P509_FibonacciNumber{
 	 }
 	 }
 	 */
+	class Solution1 {
+		public int fib(int n) {
+			if (n < 2) {
+				return n;
+			}
+			int p = 0, q = 0, r = 1;
+			for (int i = 2; i <= n; ++i) {
+				p = q;
+				q = r;
+				r = p + q;
+			}
+			return r;
+		}
+	}
+
 	class Solution {
 		public int fib(int n) {
 			if (n < 2) {

@@ -12,7 +12,7 @@
 //输出：4
 //解释：
 //T_3 = 0 + 1 + 1 = 2
-//T_4 = 1 + 1 + 2 = 4
+//T_4 = 1 + 1 + 2 = 4   T_5 = 1 + 2 + 4 =
 // 
 //
 // 示例 2： 
@@ -41,12 +41,29 @@ class P1137_NThTribonacciNumber{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P1137_NThTribonacciNumber().new Solution();
+	 	 solution.tribonacci(4);
 	 }
 //力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int tribonacci(int n) {
-    	return process(n);
+//    	return process(n);
+		if (n==0){
+			return 0;
+		}else if (n==1 || n==2){
+			return 1;
+		}
+		int p = 0;
+		int q = 1;
+		int r = 1;
+		int temp = 0;
+		for (int i = 3; i <= n; i++) {
+			temp = p+q+r;
+			p = q;
+			q = r;
+			r = temp;
+		}
+		return temp;
     }
 	// 动态规划
 	// 直接递归 35 超时 考虑优化
@@ -57,7 +74,6 @@ class Solution {
 		if (n == 1 || n == 2){
 			return 1;
 		}
-
 		return process(n-1)+process(n-2)+process(n-3);
 	}
 
