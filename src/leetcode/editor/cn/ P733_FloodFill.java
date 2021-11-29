@@ -49,6 +49,7 @@ class P733_FloodFill {
 		Solution solution = new P733_FloodFill().new Solution();
 	}
 
+
 	//力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
 	class Solution {
@@ -74,7 +75,6 @@ class P733_FloodFill {
 
 		}
 	}
-}
 
 //leetcode submit region end(Prohibit modification and deletion)
-
+}
