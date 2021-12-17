@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="算法入门第三天">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P997_FindTheTownJudge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ PLCP 01_GuessNumbers.java" afterDir="false" />
+    <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="算法入门第四天">
+      <change afterPath="$PROJECT_DIR$/src/class07/Code01_MirroyTravels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P116_PopulatingNextRightPointersInEachNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P198_HouseRobber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P206_ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P21_MergeTwoSortedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P3_LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P542_Zero1Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P567_PermutationInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P617_MergeTwoBinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P994_RottingOranges.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/Offer_03_ShuZuZhongZhongFuDeShuZiLcof$Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/Offer_03_ShuZuZhongZhongFuDeShuZiLcof.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +77,9 @@
     <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="class07" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ideawork\github\algorithm-training\leetcode\src\easy" />
       <recent name="$PROJECT_DIR$/src/class03" />
@@ -79,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Offer_03_ShuZuZhongZhongFuDeShuZiLcof">
+  <component name="RunManager" selected="Application.P695_MaxAreaOfIsland">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -190,8 +208,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Offer_03_ShuZuZhongZhongFuDeShuZiLcof" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Offer_03_ShuZuZhongZhongFuDeShuZiLcof" />
+    <configuration name="P198_HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P198_HouseRobber" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -204,8 +222,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P101_SymmetricTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P101_SymmetricTree" />
+    <configuration name="P3_LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P3_LongestSubstringWithoutRepeatingCharacters" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -218,8 +236,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P167_TwoSumIiInputArrayIsSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P167_TwoSumIiInputArrayIsSorted" />
+    <configuration name="P567_PermutationInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P567_PermutationInString" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -232,8 +250,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P283_MoveZeroes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P283_MoveZeroes" />
+    <configuration name="P617_MergeTwoBinaryTrees" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P617_MergeTwoBinaryTrees" />
+      <module name="Nowcoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P695_MaxAreaOfIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P695_MaxAreaOfIsland" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -248,20 +280,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rotate_array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="medium.rotate_array" />
-      <module name="leetcode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -394,19 +412,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.rotate_array" />
-      <item itemvalue="Application.P101_SymmetricTree" />
-      <item itemvalue="Application.P283_MoveZeroes" />
-      <item itemvalue="Application.P167_TwoSumIiInputArrayIsSorted" />
-      <item itemvalue="Application.Offer_03_ShuZuZhongZhongFuDeShuZiLcof" />
+      <item itemvalue="Application.P3_LongestSubstringWithoutRepeatingCharacters" />
+      <item itemvalue="Application.P617_MergeTwoBinaryTrees" />
+      <item itemvalue="Application.P198_HouseRobber" />
+      <item itemvalue="Application.P567_PermutationInString" />
+      <item itemvalue="Application.P695_MaxAreaOfIsland" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Offer_03_ShuZuZhongZhongFuDeShuZiLcof" />
-        <item itemvalue="Application.P167_TwoSumIiInputArrayIsSorted" />
-        <item itemvalue="Application.P283_MoveZeroes" />
-        <item itemvalue="Application.P101_SymmetricTree" />
-        <item itemvalue="Application.rotate_array" />
+        <item itemvalue="Application.P695_MaxAreaOfIsland" />
+        <item itemvalue="Application.P567_PermutationInString" />
+        <item itemvalue="Application.P3_LongestSubstringWithoutRepeatingCharacters" />
+        <item itemvalue="Application.P198_HouseRobber" />
+        <item itemvalue="Application.P617_MergeTwoBinaryTrees" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +471,13 @@
       <workItem from="1637131466134" duration="604000" />
       <workItem from="1637135624883" duration="1069000" />
       <workItem from="1637215337722" duration="1895000" />
-      <workItem from="1637541904842" duration="36420000" />
+      <workItem from="1637541904842" duration="75695000" />
+      <workItem from="1638146872956" duration="48978000" />
+      <workItem from="1638751501136" duration="12880000" />
+      <workItem from="1638776129859" duration="1768000" />
+      <workItem from="1638841797892" duration="5273000" />
+      <workItem from="1638869329618" duration="22375000" />
+      <workItem from="1639356388461" duration="36492000" />
     </task>
     <task id="LOCAL-00001" summary="无环链表相交">
       <created>1631698099956</created>
@@ -511,7 +535,70 @@
       <option name="project" value="LOCAL" />
       <updated>1637652149042</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="算法入门第三天">
+      <created>1637659750560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637659750561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="算法入门第四天">
+      <created>1637732737373</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637732737373</updated>
+    </task>
+    <task id="LOCAL-00011" summary="算法入门第四天">
+      <created>1637819909313</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637819909313</updated>
+    </task>
+    <task id="LOCAL-00012" summary="算法入门第四天">
+      <created>1637821369310</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637821369310</updated>
+    </task>
+    <task id="LOCAL-00013" summary="算法入门第四天">
+      <created>1637824021230</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637824021230</updated>
+    </task>
+    <task id="LOCAL-00014" summary="算法入门第六天">
+      <created>1638173853823</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638173853823</updated>
+    </task>
+    <task id="LOCAL-00015" summary="算法入门第六天">
+      <created>1638174075098</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638174075098</updated>
+    </task>
+    <task id="LOCAL-00016" summary="算法入门第1天">
+      <created>1638773748264</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638773748264</updated>
+    </task>
+    <task id="LOCAL-00017" summary="算法入门第2天">
+      <created>1638859563562</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638859563562</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +631,11 @@
     <MESSAGE value="无环链表相交" />
     <MESSAGE value="day02" />
     <MESSAGE value="算法入门第三天" />
-    <option name="LAST_COMMIT_MESSAGE" value="算法入门第三天" />
+    <MESSAGE value="算法入门第四天" />
+    <MESSAGE value="算法入门第六天" />
+    <MESSAGE value="算法入门第1天" />
+    <MESSAGE value="算法入门第2天" />
+    <option name="LAST_COMMIT_MESSAGE" value="算法入门第2天" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -563,6 +654,59 @@
           <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P283_MoveZeroes.java</url>
           <line>33</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P557_ReverseWordsInAStringIii.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P509_FibonacciNumber.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P1137_NThTribonacciNumber.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P3_LongestSubstringWithoutRepeatingCharacters.java</url>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P617_MergeTwoBinaryTrees.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P278_FirstBadVersion.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P3_LongestSubstringWithoutRepeatingCharacters.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P567_PermutationInString.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P77_Combinations.java</url>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P695_MaxAreaOfIsland.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P695_MaxAreaOfIsland.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/leetcode/src/medium/rotate_array.java</url>
