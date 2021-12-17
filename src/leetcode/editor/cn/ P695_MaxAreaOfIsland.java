@@ -75,15 +75,17 @@ class P695_MaxAreaOfIsland{
 class Solution {
 
 	 	int[][] dirt = {{0,1},{0,-1},{-1,0},{1,0}};
-
+	 	// 对于每一个坐标进行深度优先搜索遍历
 		public int maxAreaOfIsland(int[][] grid) {
 			int max = 0;
 			int m = grid.length;
 			int n = grid[0].length;
+			// 优化 对于每一个没遍历过的坐标进行深度优先搜索遍历
+			boolean[][] seem = new boolean[m][n];
 			for (int i = 0; i < m; i++) {
 				for (int j = 0; j < n; j++) {
-					if (grid[i][j]==1){
-						int area = dfs(new int[]{i, j}, grid);
+					if (grid[i][j]==1 && !seem[i][j]){
+						int area = dfs(new int[]{i, j}, grid,seem);
 						max = Math.max(max,area);
 					}
 				}
@@ -92,12 +94,11 @@ class Solution {
 		}
 
 
-		public int dfs(int[] arr,int[][] grid){
+		public int dfs(int[] arr,int[][] grid,boolean[][] seem){
 			int area = 1;
 			int m = grid.length;
 			int n = grid[0].length;
 			Queue<int[]> queue = new LinkedList<>();
-			boolean[][] seem = new boolean[m][n];
 			queue.add(arr);
 			seem[arr[0]][arr[1]] = true;
 			while (!queue.isEmpty()){
