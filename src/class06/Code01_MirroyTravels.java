@@ -1,4 +1,4 @@
-package class07;
+package class06;
 
 public class Code01_MirroyTravels {
 

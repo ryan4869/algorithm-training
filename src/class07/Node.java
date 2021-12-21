@@ -1,22 +1,20 @@
 package class07;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Node {
-    int val;
-    Node left;
-    Node right;
-    Node next;
 
-    public Node() {
-    }
+    int in; // 入度
+    int out; // 出度
+    int value;
+    List<Node> next;
+    List<Edge> edges;
 
-    public Node(int val) {
-        this.val = val;
-    }
-
-    public Node(int val, Node left, Node right,Node next) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-        this.next = next;
+    public Node(int in, int out) {
+        this.in = in;
+        this.out = out;
+        this.next = new LinkedList<>();
+        this.edges = new LinkedList<>();
     }
 }

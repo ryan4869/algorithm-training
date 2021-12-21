@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="算法入门第十二天">
+      <change afterPath="$PROJECT_DIR$/src/class06/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Code01_BFS_DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Code02_Topo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Code03_Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Code04_Prim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Code05_Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P136_SingleNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P191_NumberOf1Bits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P231_PowerOfTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P695_MaxAreaOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P695_MaxAreaOfIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class07/Code01_MirroyTravels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class06/Code01_MirroyTravels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class07/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class07/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +55,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1y9bZp6SEDnWtYy86ox1I9a4OWo" />
   <component name="PropertiesComponent">
@@ -461,7 +468,8 @@
       <workItem from="1638776129859" duration="1768000" />
       <workItem from="1638841797892" duration="5273000" />
       <workItem from="1638869329618" duration="22375000" />
-      <workItem from="1639356388461" duration="40008000" />
+      <workItem from="1639356388461" duration="42634000" />
+      <workItem from="1639961430354" duration="26469000" />
     </task>
     <task id="LOCAL-00001" summary="无环链表相交">
       <created>1631698099956</created>
@@ -589,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639723228259</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="算法入门第十二天">
+      <created>1639728870810</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1639728870810</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
