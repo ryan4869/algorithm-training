@@ -62,6 +62,8 @@ class P120_Triangle{
 	//leetcode submit region begin(Prohibit modification and deletion)
 
 	class Solution {
+	 	// 暴力递归
+		// 记忆化
 		Integer[][] memo;
 		public int minimumTotal(List<List<Integer>> triangle) {
 			memo = new Integer[triangle.size()][triangle.size()];
@@ -72,7 +74,7 @@ class P120_Triangle{
 			if (i == triangle.size()) {
 				return 0;
 			}
-			if (memo[i][j] != null) {
+			if (memo[i][j] != null){
 				return memo[i][j];
 			}
 			return memo[i][j] = Math.min(dfs(triangle, i + 1, j), dfs(triangle, i + 1, j + 1)) + triangle.get(i).get(j);

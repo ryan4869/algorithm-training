@@ -39,6 +39,7 @@ public class Code01_Trie {
                 node = node.nexts[index];
             }
             node.end++;
+
         }
 
         public boolean search(String word){
@@ -55,7 +56,53 @@ public class Code01_Trie {
             return true;
         }
 
+        // 递归遍历 存在.ba的情况
+        public boolean searchDFS(String word){
+            char[] chars = word.toCharArray();
+            return dfs(word,0,root);
+        }
 
+        public boolean DFS(char[] chars, int count, TrieNode node){
+            if (count == chars.length-1){
+                return true;
+            }
+            if (Character.isLetter(chars[count])){
+                int index = chars[count]-'a';
+                if (node.nexts[index] != null){
+                    node = node.nexts[index];
+                    count++;
+                    return DFS(chars,count,node);
+                }
+            }else {
+                for (int i = 0; i < 26 ; i++) {
+                    count++;
+                    return node!=null && DFS(chars,count,node.nexts[i]);
+                }
+            }
+            return false;
+        }
+
+        private boolean dfs(String word, int index, TrieNode node) {
+            if (index == word.length()) {
+                return node.end >= 1;
+            }
+            char ch = word.charAt(index);
+            if (Character.isLetter(ch)) {
+                int childIndex = ch - 'a';
+                TrieNode child = node.nexts[childIndex];
+                if (child != null && dfs(word, index + 1, child)) {
+                    return true;
+                }
+            } else {
+                for (int i = 0; i < 26; i++) {
+                    TrieNode child = node.nexts[i];
+                    if (child != null && dfs(word, index + 1, child)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
 
         public void delete(String word){
             boolean search = search(word);
@@ -89,8 +136,8 @@ public class Code01_Trie {
         trie.insert("bad");
         trie.insert("dad");
         trie.insert("mad");
-        System.out.println(trie.search("pad"));
-        System.out.println(trie.search("bad"));
+        System.out.println(trie.searchDFS("pad"));
+        System.out.println(trie.searchDFS(".ad"));
 
     }
 }

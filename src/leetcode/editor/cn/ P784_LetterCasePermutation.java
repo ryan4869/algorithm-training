@@ -29,20 +29,48 @@ package leetcode.editor.cn;
  
 //字母大小写全排列
 
+import java.util.ArrayList;
 import java.util.List;
 
 class P784_LetterCasePermutation{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P784_LetterCasePermutation().new Solution();
+	 	 String s = "a1b2";
+	 	 solution.letterCasePermutation(s);
 	 }
 //力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> letterCasePermutation(String s) {
-
-    	return null;
+    	List<String> res = new ArrayList<>();
+    	String path  = new String();
+		dfs(path,s,0,res);
+		return res;
     }
+
+	private void dfs(String path,String s,int depth,List<String> res) {
+		if (depth == s.length()){
+			res.add(path);
+			return;
+		}
+		char cur = s.charAt(depth++);
+		String newPath = null;
+		if (Character.isLetter(cur)){
+			// 只有大写和小写两种选择
+			char[] chars = new char[2];
+			chars[0] = cur;
+			chars[1] = Character.isLowerCase(cur)?Character.toUpperCase(cur):Character.toLowerCase(cur);
+			for (int i = 0; i < chars.length ; i++) {
+				cur = chars[i];
+				newPath = path+cur;
+				dfs(newPath,s,depth,res);
+			}
+		}else {
+			newPath = path+cur;
+			dfs(newPath,s,depth,res);
+		}
+	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

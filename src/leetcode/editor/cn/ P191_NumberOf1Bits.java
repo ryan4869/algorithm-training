@@ -70,13 +70,19 @@ class P191_NumberOf1Bits{
 	//leetcode submit region begin(Prohibit modification and deletion)
 public class Solution {
     // you need to treat n as an unsigned value
+
+    // n & (n - 1) ，可以把 n 的二进制中，最后一个出现的 1 改写成 0。
+    //
+    //下面的这个图，说明了 n & (n - 1) 这个操作的原理。我们发现只要每次执行这个操作，就会消除掉 n 的二进制中 最后一个出现的 1。
+    //
+    //因此执行 n & (n - 1) 使得 n 变成 0 的操作次数，就是 n 的二进制中 1 的个数。
+    //
+    // P231
     public int hammingWeight(int n) {
-        String s = Integer.toBinaryString(n);
         int res = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '1') {
-                res++;
-            }
+        while (n!=0){
+            res++;
+            n = n & (n-1);
         }
         return res;
     }

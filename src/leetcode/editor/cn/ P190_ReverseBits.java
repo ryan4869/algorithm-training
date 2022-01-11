@@ -54,13 +54,23 @@ class P190_ReverseBits{
 	 }
 //力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
-public class Solution {
     // you need treat n as an unsigned value
-    public int reverseBits(int n) {
-
-        return 0;
+    public class Solution {
+        public int reverseBits(int n) {
+//            int rev = 0;
+//            for (int i = 0; i < 32 && n != 0; ++i) {
+//                rev |= (n & 1) << (31 - i);
+//                n >>>= 1;
+//            }
+//            return rev;
+            int res = 0;
+            for (int i = 1; i <= 32; i++) {
+                res += (n & 1) << (32-i);
+                n = n >>> 1;
+            }
+            return res;
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

@@ -2,20 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf28846-1c53-47f0-853d-130369e1f696" name="Default" comment="算法入门第二天">
-      <change afterPath="$PROJECT_DIR$/src/class08/Code01_Trie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P211_DesignAddAndSearchWordsDataStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/class08/Code02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P102_BinaryTreeLevelOrderTraversal$Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P102_BinaryTreeLevelOrderTraversal$TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P102_BinaryTreeLevelOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P208_ImplementTriePrefixTree$Trie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P208_ImplementTriePrefixTree$TrieNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P208_ImplementTriePrefixTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P79_WordSearch$Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P79_WordSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class03/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class07/calTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class08/Code02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class08/Code04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class08/Code04_LessMoney.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class08/Code08_Banker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class08/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P102_BinaryTreeLevelOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P1995_CountSpecialQuadruplets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P208_ImplementTriePrefixTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P4_MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P52_NQueensIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P79_WordSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/class07/Code01_MirroyTravels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/class07/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/class07/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P120_Triangle$Solution$Info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P120_Triangle$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P120_Triangle$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P695_MaxAreaOfIsland$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P695_MaxAreaOfIsland$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P695_MaxAreaOfIsland.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P695_MaxAreaOfIsland.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/class07/Code04_Prim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/class07/Code04_Prim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/class08/Code01_Trie$Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/class08/Code01_Trie$Trie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/class08/Code01_Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/class08/Code01_Trie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure$TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure$TrieNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure$WordDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure$WordDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/P211_DesignAddAndSearchWordsDataStructure.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nowcoder/leetcode/editor/cn/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class07/Code04_Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class07/Code04_Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class08/Code01_Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class08/Code01_Trie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P120_Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P120_Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P190_ReverseBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P190_ReverseBits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P191_NumberOf1Bits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P191_NumberOf1Bits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P211_DesignAddAndSearchWordsDataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P211_DesignAddAndSearchWordsDataStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P231_PowerOfTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P231_PowerOfTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P46_Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P46_Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P77_Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P77_Combinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/ P784_LetterCasePermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ P784_LetterCasePermutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Code01_Trie.Test">
+  <component name="RunManager" selected="Application.P784_LetterCasePermutation">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -200,8 +230,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P3_LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P3_LongestSubstringWithoutRepeatingCharacters" />
+    <configuration name="Heap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class03.Heap" />
+      <module name="Nowcoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P208_ImplementTriePrefixTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P208_ImplementTriePrefixTree" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -214,8 +258,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P567_PermutationInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P567_PermutationInString" />
+    <configuration name="P51_NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P51_NQueens" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -228,27 +272,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P695_MaxAreaOfIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P695_MaxAreaOfIsland" />
+    <configuration name="P784_LetterCasePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.P784_LetterCasePermutation" />
       <module name="Nowcoder" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class08.Test" />
-      <module name="Nowcoder" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,6 +288,20 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class07.calTest" />
+      <module name="Nowcoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -355,23 +399,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Code01_Trie.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Nowcoder" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="class08" />
-      <option name="MAIN_CLASS_NAME" value="class08.Code01_Trie" />
-      <option name="METHOD_NAME" value="Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -407,19 +434,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.P3_LongestSubstringWithoutRepeatingCharacters" />
-      <item itemvalue="Application.P567_PermutationInString" />
-      <item itemvalue="Application.P695_MaxAreaOfIsland" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="JUnit.Code01_Trie.Test" />
+      <item itemvalue="Application.P208_ImplementTriePrefixTree" />
+      <item itemvalue="Application.calTest" />
+      <item itemvalue="Application.P51_NQueens" />
+      <item itemvalue="Application.Heap" />
+      <item itemvalue="Application.P784_LetterCasePermutation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Code01_Trie.Test" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.P695_MaxAreaOfIsland" />
-        <item itemvalue="Application.P567_PermutationInString" />
-        <item itemvalue="Application.P3_LongestSubstringWithoutRepeatingCharacters" />
+        <item itemvalue="Application.P784_LetterCasePermutation" />
+        <item itemvalue="Application.Heap" />
+        <item itemvalue="Application.P51_NQueens" />
+        <item itemvalue="Application.calTest" />
+        <item itemvalue="Application.P208_ImplementTriePrefixTree" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +501,13 @@
       <workItem from="1638869329618" duration="22375000" />
       <workItem from="1639356388461" duration="42634000" />
       <workItem from="1639961430354" duration="45736000" />
-      <workItem from="1640238313874" duration="1182000" />
+      <workItem from="1640238313874" duration="1838000" />
+      <workItem from="1640569851221" duration="3287000" />
+      <workItem from="1640594955665" duration="13681000" />
+      <workItem from="1640673961201" duration="25015000" />
+      <workItem from="1640930981486" duration="21940000" />
+      <workItem from="1641373875457" duration="1328000" />
+      <workItem from="1641776399840" duration="22216000" />
     </task>
     <task id="LOCAL-00001" summary="无环链表相交">
       <created>1631698099956</created>
@@ -616,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640078658019</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="算法入门第二天">
+      <created>1640251794221</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1640251794221</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,6 +762,43 @@
           <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P209_MinimumSizeSubarraySum.java</url>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/class08/Code01_Trie.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/class08/Code01_Trie.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P1995_CountSpecialQuadruplets.java</url>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P1995_CountSpecialQuadruplets.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P51_NQueens.java</url>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P51_NQueens.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/ P120_Triangle.java</url>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/class03/Heap.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/leetcode/src/medium/rotate_array.java</url>
           <line>4</line>
@@ -729,14 +806,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/class08/Code01_Trie.java</url>
-          <line>80</line>
-          <properties class="class08.Code01_Trie" method="Test">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

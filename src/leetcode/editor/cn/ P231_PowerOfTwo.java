@@ -69,17 +69,7 @@ class P231_PowerOfTwo{
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isPowerOfTwo(int n) {
-		String s = Integer.toBinaryString(n);
-		int res = 0;
-		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == '1') {
-				res++;
-			}
-		}
-		if (n>0 && res==1 || n<0 && res==2){
-			return true;
-		}
-		return false;
+		return n > 0 && (n & (n - 1)) == 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

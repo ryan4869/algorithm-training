@@ -14,7 +14,12 @@ public class Code04_Prim {
 
     public Set<Edge> prim(Graph graph){
         Set<Edge> result = new HashSet<>();
-        PriorityQueue<Edge> priorityQueue = new PriorityQueue<Edge>();
+        PriorityQueue<Edge> priorityQueue = new PriorityQueue<Edge>(new Comparator<Edge>() {
+            @Override
+            public int compare(Edge o1, Edge o2) {
+                return o1.weight-o2.weight;
+            }
+        });
 
         Set<Node> set = new HashSet<>();
 

@@ -50,32 +50,30 @@ class P77_Combinations{
 //力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+	     // 从P46改造
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new ArrayList<>();
-        if (k <= 0 || n < k) {
-            return res;
-        }
-        // 从 1 开始是题目的设定
-        Deque<Integer> path = new ArrayDeque<>();
-        dfs(n, k, 1, path, res);
+        List<Integer> path = new ArrayList<>();
+        boolean[] use = new boolean[n+1];
+        dfs(n,k,path,use,res);
         return res;
     }
 
-    private void dfs(int n, int k, int begin, Deque<Integer> path, List<List<Integer>> res) {
-        // 递归终止条件是：path 的长度等于 k
-        if (path.size() == k) {
-            res.add(new ArrayList<>(path));
+    private void dfs(int n,int k,List<Integer> path,boolean[] use,List<List<Integer>> res) {
+        if (path.size() == k){
+            res.add(path);
             return;
         }
-
-        // 遍历可能的搜索起点
-        for (int i = begin; i <= n; i++) {
-            // 向路径变量里添加一个数
-            path.addLast(i);
-            // 下一轮搜索，设置的搜索起点要加 1，因为组合数理不允许出现重复的元素
-            dfs(n, k, i + 1, path, res);
-            // 重点理解这里：深度优先遍历有回头的过程，因此递归之前做了什么，递归之后需要做相同操作的逆向操作
-            path.removeLast();
+        for (int i = 1; i <= n ; i++) {
+            // 再插入的数字必须大于前一个
+            if (!use[i] && (path.size()==0 || i>path.get(path.size()-1))){
+                List<Integer> newPath = new ArrayList<>(path);
+                newPath.add(i);
+                boolean[] newUse = new boolean[n+1];
+                System.arraycopy(use,0,newUse,0,n+1);
+                newUse[i] = true;
+                dfs(n,k,newPath,newUse,res);
+            }
         }
     }
 }

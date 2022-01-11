@@ -7,7 +7,19 @@
 // 
 //输入：nums = [1,2,3]
 //输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-// 
+//
+//     1             2            3
+//   /   \         /   \        /   \
+// 1,2   1,3     2,1   2,3    3,1   3,2
+// 3 2
+//
+//  2
+// 1 3
+// 3 1
+//
+//  3
+// 1 2
+// 2 1
 //
 // 示例 2： 
 //
@@ -40,6 +52,7 @@ package leetcode.editor.cn;
  
 //全排列
 
+import java.util.ArrayList;
 import java.util.List;
 
 class P46_Permutations{
@@ -51,9 +64,29 @@ class P46_Permutations{
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-
-    	return null;
+    	List<List<Integer>> res = new ArrayList<>();
+		List<Integer> path = new ArrayList<>();
+		boolean[] include = new boolean[nums.length];
+		dfs(path,include,nums,res);
+    	return res;
     }
+
+    public void dfs(List<Integer> path, boolean[] include,int[] nums,List<List<Integer>> res){
+    	if (path.size() == nums.length){
+    		res.add(path);
+    		return;
+		}
+		for (int i = 0; i < nums.length; i++) {
+			if (!include[i]){
+				List<Integer> newPath = new ArrayList<>(path);
+				newPath.add(nums[i]);
+				boolean[] newInclude = new boolean[nums.length];
+				System.arraycopy(include,0,newInclude,0,include.length);
+				newInclude[i] = true;
+				dfs(newPath,newInclude,nums,res);
+			}
+		}
+	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

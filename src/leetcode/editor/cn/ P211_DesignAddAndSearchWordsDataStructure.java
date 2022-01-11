@@ -53,6 +53,9 @@ package leetcode.editor.cn;
 import class08.Code01_Trie;
 import org.junit.Test;
 
+/**
+ * 扩展版前缀树
+ */
 class P211_DesignAddAndSearchWordsDataStructure{
 	 public static void main(String[] args) {
 	 	 //测试代码
@@ -111,17 +114,29 @@ class WordDictionary {
     }
     
     public boolean search(String word) {
-        TrieNode node = root;
-        char[] chrs = word.toCharArray();
-        int index = 0;
-        for (int i = 0; i < chrs.length ; i++) {
-            index = chrs[i]-'a';
-            if (node.nexts[index] == null){
-                return false;
-            }
-            node = node.nexts[index];
+        return dfs(word,0,root);
+    }
+
+    private boolean dfs(String word, int index, TrieNode node) {
+        if (index == word.length()) {
+            return node.end >= 1;
         }
-        return true;
+        char ch = word.charAt(index);
+        if (Character.isLetter(ch)) {
+            int childIndex = ch - 'a';
+            TrieNode child = node.nexts[childIndex];
+            if (child != null && dfs(word, index + 1, child)) {
+                return true;
+            }
+        } else {
+            for (int i = 0; i < 26; i++) {
+                TrieNode child = node.nexts[i];
+                if (child != null && dfs(word, index + 1, child)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 }
