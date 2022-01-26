@@ -46,7 +46,11 @@
 package leetcode.editor.cn;
  
 //两数之和 II - 输入有序数组
- 
+
+/**
+ * P1 两数之和 --> 哈希表
+ * P167 两数之和 已按照非递减顺序排序
+ */
 class P167_TwoSumIiInputArrayIsSorted{
 	 public static void main(String[] args) {
 	 	 //测试代码

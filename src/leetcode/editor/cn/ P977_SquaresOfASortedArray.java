@@ -55,16 +55,18 @@ class P977_SquaresOfASortedArray{
 class Solution {
 	public int[] sortedSquares(int[] nums) {
 		int[] res = new int[nums.length];
+		// 可以利用已按非递减顺序排列的条件
 		int seprate = 0;
-		if (nums[0]>=0){
+		if (nums[0]>=0){// nums都大于等于0，直接每个数字平方
 			for (int i = 0; i < nums.length; i++) {
 				res[i] = ((int)Math.pow(nums[i],2));
 			}
-		}else if (nums[nums.length-1]<=0){
+		}else if (nums[nums.length-1]<=0){// nums都小于等于0，每个数字平方，逆序
 			for (int i=0,j = nums.length-1; i < nums.length ; i++,j--) {
 				res[j] = ((int)Math.pow(nums[i],2));
 			}
 		} else {
+			// 找到正负分界
 			for (int i = 0; i < nums.length ; i++) {
 				if (nums[i]>=0){
 					seprate = i;

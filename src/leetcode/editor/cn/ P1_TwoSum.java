@@ -47,18 +47,33 @@
 package leetcode.editor.cn;
  
 //两数之和
- 
+
+import java.util.HashMap;
+
 class P1_TwoSum{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P1_TwoSum().new Solution();
+//	 	 int[] nums = {2,7,11,15};
+//	 	 int target = 9;
+//	 	 solution.twoSum(nums,target);
 	 }
 //力扣代码
 	//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-
-    	return nums;
+    	int[] res = new int[2];
+		HashMap<Integer,Integer> hashMap = new HashMap<>();
+		for (int i = 0; i < nums.length ; i++) {
+			if (hashMap.containsKey(target-nums[i])){
+				res[0] = i;
+				res[1] = hashMap.get(target-nums[i]);
+				return res;
+			}else {
+				hashMap.put(nums[i],i);
+			}
+		}
+    	return res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

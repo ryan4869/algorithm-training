@@ -1,5 +1,8 @@
 package class03;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class Heap {
 // i  2i+1
 
@@ -59,9 +62,43 @@ public class Heap {
 
     public static void main(String[] args) {
         int[] arr = {3,6,1,8};
-        Heap.heapSort(arr,arr.length);
-        for (int i = 0; i < arr.length; i++) {
+//        Heap.heapSort(arr,arr.length);
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i]);
+//        }
+        for (int i = 0; i <arr.length ; i++) {
+            heapInsert2(arr,i);
+        }
+        for (int i = 0; i < arr.length ; i++) {
             System.out.println(arr[i]);
+        }
+    }
+
+    public static void heapInsert2(int[] arr,int index){
+        while (arr[index] > arr[(index-1)/2]){
+            swap(arr,index,(index-1)/2);
+            index = (index-1)/2;
+        }
+    }
+
+    public void sortedArrayDistanceLessK(int[] arr, int k){
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1-o2; // 降序
+            }
+        });
+        int index = 0;
+        for (; index  <k ; index++) {
+            queue.add(arr[index]);
+        }
+        int i = 0;
+        while (index<arr.length){
+            queue.add(arr[index++]);
+            arr[i++] = queue.poll();
+        }
+        while (!queue.isEmpty()){
+            arr[i++] = queue.poll();
         }
     }
 }
